@@ -1,12 +1,12 @@
-let taskDb = [];
+let tasksDb = [];
 
 
 
 function addTask() {
-    const taskinput = document.getElementById('todo-input');
+    const taskInput = document.getElementById('todo-input');
     const tasDate = document.getElementById('todo-date');
 
-    if (validateInput(taskinput.value, taskDate.value)) {
+    if (validateInput(taskInput.value, taskDate.value)) {
          const newTask = {
         task: taskInput.value,
         date: taskDate.value, 
@@ -20,10 +20,10 @@ function addTask() {
 
  function renderTasks() {
     const taskList = document.getElementById('task-list');
-    tasklist.innerHTML = 'No taks added yet';
+    taskList.innerHTML = '';
     
     taskDb.forEach((taskDbj, index) => {
-        taskList.innerHTML += <li>${taskDbj.task} - ${taskDbj.date}</li>; 
+        taskList.innerHTML += '<li>${taskDbj.task} - ${taskDbj.date}</li>'; 
     }); 
 
 }

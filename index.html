@@ -7,12 +7,14 @@
 
     <!-- CSS External File-->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body style=" justify-items: center; "  >
+
     <!-- Header Section-->
     <header>
-
         <h1 class="text-3xl font-bold">My Todo List</h1>
     </header>   
 
@@ -21,20 +23,20 @@
         <section class="todo-app my-4">
         <input type="text" class="border rounded p-2" id="todo-input" placeholder="Add new task..">
         <input type="date" class="border rounded p-2" id="todo-date" placeholder="Select due date..">
-        <button class="bg-blue-500 text-white rounded p-2" id="add-btn">Add</button>
-        <ul id="todo-list"></ul>
+        <button class="bg-blue-500 text-white rounded p-2" onclick="addTask();">+</button>
+        
     </section>
 
     <section class="flex justify-between my-4">
-        <button class="bg-gray-300 p-2" id="filter-btn">Filter</button>
-        <button class="bg-red-500 text-white p-2" oneclick="deleteAllTasks();" >Delete All Tasks</button>
+        <button class="bg-gray-300 rounded p-2" id="filter-btn">Filter</button>
+        <button class="bg-red-500 text-white rounded p-2" onclick="deleteAllTasks();">Delete All Tasks</button>
     </section>
 
     <section class="my-4 ">
-        <h2 class="text-2xl" > List of Tasks</h2>  
-        <ul id="task-list"></ul>
+        <h2 class="text-2xl" >List of Tasks</h2>  
+        <ul id="task-list">
         <li>No tasks added yet</li>
-
+     </ul>       
     </section>
     </main> 
 
