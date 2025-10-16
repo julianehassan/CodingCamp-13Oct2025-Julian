@@ -23,8 +23,10 @@ function addTask() {
     tasklist.innerHTML = 'No taks added yet';
     
     taskDb.forEach((taskDbj, index) => {
-        taskList.innerHTML += <li>${taskDbj.task} - ${taskDbj.date}; 
-    ; 
+        taskList.innerHTML += <li>${taskDbj.task} - ${taskDbj.date}</li>; 
+    }); 
+
+}
 
     
     function deleteAllTasks() {
@@ -45,4 +47,4 @@ function addTask() {
 
 
     
- }
+ 
