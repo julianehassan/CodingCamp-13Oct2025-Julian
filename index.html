@@ -3,20 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-Do List with Date</title>
+    <title>Todo List - Yama</title>
 
     <!-- CSS External File-->
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
+<body style=" justify-items: center; "  >
     <!-- Header Section-->
-    <header></header>   
+    <header>
+
+        <h1 class="text-3xl font-bold">My Todo List</h1>
+    </header>   
 
     <!-- Main Content Section-->  
-    <main></main> 
+    <main>
+        <section class="todo-app my-4">
+        <input type="text" class="border rounded p-2" id="todo-input" placeholder="Add new task..">
+        <input type="date" class="border rounded p-2" id="todo-date" placeholder="Select due date..">
+        <button class="bg-blue-500 text-white rounded p-2" id="add-btn">Add</button>
+        <ul id="todo-list"></ul>
+    </section>
+
+    <section class="flex justify-between my-4">
+        <button class="bg-gray-300 p-2" id="filter-btn">Filter</button>
+        <button class="bg-red-500 text-white p-2" oneclick="deleteAllTasks();" >Delete All Tasks</button>
+    </section>
+
+    <section class="my-4 ">
+        <h2 class="text-2xl" > List of Tasks</h2>  
+        <ul id="task-list"></ul>
+        <li>No tasks added yet</li>
+
+    </section>
+    </main> 
 
     <!-- Footer Section-->
-    <footer></footer>
+    <footer>
+        <p class="text-sm">2025 Yama Todo List app</p>
+    </footer>
 
     <!-- Javascript External File-->
     <script src="js/script.js"></script>
