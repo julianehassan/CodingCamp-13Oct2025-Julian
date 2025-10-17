@@ -4,17 +4,19 @@ let tasksDb = [];
 
 function addTask() {
     const taskInput = document.getElementById('todo-input');
-    const tasDate = document.getElementById('todo-date');
+    const taskDate = document.getElementById('todo-date');
 
     if (validateInput(taskInput.value, taskDate.value)) {
          const newTask = {
         task: taskInput.value,
         date: taskDate.value, 
+        }
 
-    }
     tasksDb.push(newTask);
     
     renderTasks();
+    
+    
   }
 }
 
@@ -22,7 +24,7 @@ function addTask() {
     const taskList = document.getElementById('task-list');
     taskList.innerHTML = '';
     
-    taskDb.forEach((taskDbj, index) => {
+    tasksDb.forEach((taskDbj, index) => {
         taskList.innerHTML += '<li>${taskDbj.task} - ${taskDbj.date}</li>'; 
     }); 
 
