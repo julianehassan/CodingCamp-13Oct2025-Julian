@@ -36,7 +36,10 @@ function addTask() {
         renderTasks ();
     }
 
-    function filterTasks() { }
+    function filterTasks() { 
+           
+
+    }
 
     function validateInput(task, date) {
         if (task.trim() === '' || date.trim() == '') {
