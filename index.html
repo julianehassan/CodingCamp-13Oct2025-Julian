@@ -13,11 +13,14 @@
 
 </head>
 
+
+
 <body>
+    <div class="min-h-screen bg-blue-900">
     
     <!-- Header Section-->
     <header>
-        <h1 class="text-3xl font-bold">My Todo List</h1>
+        <h1 class="text-3xl font-bold text-center">My Todo List</h1>
     </header>   
 
     <!-- Main Content Section-->  
@@ -25,14 +28,14 @@
         <section class="todo-app my-4">
         <input type="text" class="border rounded p-2" id="todo-input" placeholder="Add new task..">
         <input type="date" class="border rounded p-2" id="todo-date" placeholder="Select due date..">
-        <button class="bg-blue-500 text-white rounded p-2" onclick="addTask();">+</button>
+        <button class="bg-blue-300 text-white rounded p-2" onclick="addTask();">+</button>
 
         
     </section>
 
     <section class="flex justify-between my-4">
         <button class="bg-gray-300 rounded p-2" id="filter-btn">Filter</button>
-        <button class="bg-red-500 text-white rounded p-2" onclick="deleteAllTasks();">Delete All Tasks</button>
+        <button class="bg-blue-300 text-white rounded p-2" onclick="deleteAllTasks();">Delete All Tasks</button>
     </section>
 
     <section class="my-4 ">
@@ -50,5 +53,6 @@
 
     <!-- Javascript External File-->
     <script src="js/script.js"></script>
+    </div>
 </body>
 </html>

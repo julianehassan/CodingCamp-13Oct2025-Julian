@@ -32,7 +32,7 @@ function addTask() {
 
     
     function deleteAllTasks() {
-        taskDb = [];
+        tasksDb = [];
         renderTasks ();
     }
 
