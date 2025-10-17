@@ -25,7 +25,7 @@ function addTask() {
     taskList.innerHTML = '';
     
     tasksDb.forEach((taskDbj, index) => {
-        taskList.innerHTML += '<li>${taskDbj.task} - ${taskDbj.date}</li>'; 
+        taskList.innerHTML += `<li>${taskDbj.task} - ${taskDbj.date}</li>`; 
     }); 
 
 }
